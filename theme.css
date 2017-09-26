@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+p{
+  font-family: "Open Sans";
+}
+#footer{
+  background-color: #313233;
+  opacity: 0.8;
+  color: white;
+  width: 92%;
+  border-radius: 5px;
+  border: 1px solid #373738;
+}
+#header{
+  background-color: #313233;
+  opacity: 0.8;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0px;
+  float: left;
+  left: 0px;
+  color: white;
+  transition: opacity 1s;
+  border: 1px solid #373738;
+  z-index: 5;
+}
+#invisible{
+  width: 90%;
+  height: 100%;
+  margin: 25px auto 25px auto;
+  color: white;
+  font-family: "Josefin Sans";
+  font-size: 50px;
+  padding: 5px;
+}
+#header:hover{
+  opacity:1;
+}
+.button a{
+  text-decoration: none;
+  color: #edebe6;
+}
+#content-box{
+  background-color: #edebe6;
+  border-radius: 5px;
+  width: 90%;
+  height: 500px;
+  display: inline-block;
+  margin:25px auto 25px auto;
+  padding: 5px;
+  opacity: 0.8;
+  transition: opacity 1s;
+}
+
+#content-box:hover{
+  opacity: 1;
+}
+.button{
+  height: 68px;
+  width: 20.13%;
+  background-color: #3a3a3a;
+  text-align: center;
+  font-family: "Open Sans";
+  color: #edebe6;
+  display: inline-block;
+  margin-top: 0px;
+  font-size: 30px;
+  margin-top: -2px;
+  padding-top: 25px;
+  margin-left: -5px;
+  margin-right: 0px;
+  border-bottom: 1px solid black;'
+  float: right;
+}
+#active{
+  background-color: #1e1e1e;
+}
+.button:hover{
+  background-color: #161616;
+}
+#active:hover{
+  background-color: #161616;
+}
+.button a{
+  color: #edebe6;
+}
+
+[data-slides] {
+	background-image: url(https://i.pinimg.com/736x/58/38/e3/5838e35952fa8d7f3ac98d4178b05667--cute-senior-pictures-back-to-school-pictures.jpg); /* Default image. */
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+  width: 100%;
+  margin-left: -10px;
+	transition: background-image 3s ease;
+  float: left;
+  background-attachment: fixed;
+  position: fixed;
+  z-index: -2;
+  margin-top: -80px;
+}
+
+.test { height: 220px; }
+@media all and (min-width: 48em) {
+	.test { height: 100%; }
+}
+
+#container{
+  width: 100%;
+  margin-top: 80px;
+  z-index: 1;
+}
+#enter a{
+  color: white;
+  text-decoration: none;
+}
+#enter{
+  border-radius: 7px;
+  background-color: #F0A202;
+  padding: 15px;
+  color: white;
+  font-size: 30px;
+  width: 15%;
+  transition: background-color 2s;
+}
+#enter:hover{
+  background-color: #FF4E00;
+}
+span #first{
+  margin-top: 20px;
+}
