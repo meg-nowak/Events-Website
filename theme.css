@@ -89,7 +89,7 @@ h4{
 }
 .button{
   height: 100%;
-  width: 16%;
+  width: 15%;
   background-color: #3a3a3a;
   text-align: center;
   font-family: "Open Sans";
@@ -130,9 +130,9 @@ h4{
   margin-top: -150px;
 }
 
-.test { height: 220px; }
+.test { height: 5000px; }
 @media all and (min-width: 48em) {
-	.test { height: 100%; }
+	.test { height: 5000px; }
 }
 
 #container{
