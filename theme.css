@@ -8,6 +8,25 @@ body {
 p{
   font-family: "Open Sans";
 }
+.logo{
+  background-color: #3a3a3a;
+  width: 21.6%;
+  height: 102.5%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -2px;
+  border-bottom: solid black 1px;
+}
+.logo img{
+  width: %;
+  height: 100%;
+  z-index: -1;
+}
+.logo p{
+  float: right;
+  margin-top: 8%;
+  font-size: 30px;
+}
 #footer{
   background-color: #313233;
   opacity: 0.8;
@@ -39,6 +58,12 @@ p{
   font-size: 50px;
   padding: 5px;
 }
+h1{
+  font-size: 200%;
+}
+h4{
+  font-size: 100%;
+}
 #header:hover{
   opacity:1;
 }
@@ -62,8 +87,8 @@ p{
   opacity: 1;
 }
 .button{
-  height: 68px;
-  width: 20.13%;
+  height: 100%;
+  width: 16%;
   background-color: #3a3a3a;
   text-align: center;
   font-family: "Open Sans";
@@ -71,11 +96,10 @@ p{
   display: inline-block;
   margin-top: 0px;
   font-size: 30px;
-  margin-top: -2px;
-  padding-top: 25px;
+  padding-top: 20px;
   margin-left: -5px;
   margin-right: 0px;
-  border-bottom: 1px solid black;'
+  border-bottom: 1px solid black;
   float: right;
 }
 #active{
@@ -97,13 +121,12 @@ p{
 	background-position: center top;
 	background-size: cover;
   width: 100%;
-  margin-left: -10px;
 	transition: background-image 3s ease;
   float: left;
   background-attachment: fixed;
   position: fixed;
   z-index: -2;
-  margin-top: -80px;
+  margin-top: -150px;
 }
 
 .test { height: 220px; }
@@ -113,7 +136,7 @@ p{
 
 #container{
   width: 100%;
-  margin-top: 80px;
+  margin-top: 150px;
   z-index: 1;
 }
 #enter a{
