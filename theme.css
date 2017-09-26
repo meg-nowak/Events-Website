@@ -22,11 +22,6 @@ p{
   height: 100%;
   z-index: -1;
 }
-.logo p{
-  float: right;
-  margin-top: 8%;
-  font-size: 30px;
-}
 #footer{
   background-color: #313233;
   opacity: 0.8;
