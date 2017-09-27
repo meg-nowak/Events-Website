@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  background-image: url(https://cdn.pixabay.com/photo/2014/09/07/17/43/girls-438152_960_720.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+  }
 p{
   font-family: "Open Sans";
 }
@@ -73,7 +72,6 @@ h4{
   background-color: #edebe6;
   border-radius: 5px;
   width: 90%;
-  height: 500px;
   display: inline-block;
   margin:25px auto 25px auto;
   padding: 5px;
@@ -114,7 +112,8 @@ h4{
 }
 
 [data-slides] {
-	background-image: url(https://i.pinimg.com/736x/58/38/e3/5838e35952fa8d7f3ac98d4178b05667--cute-senior-pictures-back-to-school-pictures.jpg); /* Default image. */
+	background-image: url("https://www.botani.com.au/wp-content/uploads/2015/03/Dollarphotoclub_71673954.jpg"
+); /* Default image. */
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
@@ -155,4 +154,14 @@ h4{
 #search{
   width: 70%;
   height: 40px;
+}
+form * {
+    border-radius:0 !important;
+}
+
+form > fieldset > legend {
+    font-size:120%;
+}
+.container{
+  margin-left: 15%
 }

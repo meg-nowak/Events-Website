@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Social Youth - Blog</title>
+  <link rel='stylesheet' type='text/css' href='theme.css'/>
+</head>
+<body>
+  <span
+  	class="test"
+  	data-slides=""
+  > … </span>
+  <div id="header">
+    <span class="logo"><img src="images\Capture.PNG"/></span>
+    <span class="button">
+      <a href="index.html" id="link">Home</a>
+    </span>
+    <span class="button">
+      <a href="event-search.html" id="link">Events</a>
+    </span>
+    <span class="button">
+      <a href="blog.html" id="link" class="active">Blog</a>
+    </span>
+    <span class="button">
+      <a href="https://www.youtube.com" id="link">About</a>
+    </span>
+    <span class="button">
+      <a href="contact.html" id="link">Contact</a>
+    </span>
+  </div>
+  <div id="container">
+    <center>
+      <span id="invisible" style="height:50vh; padding-top:25vh;">
+        <h1>Contact us</h1>
+      </span>
+    </center>
+    <center>
+    </center>
+    <br>
+    <center>
+      <span id="content-box">
+        <center>
+        <script>
+                  $(document).ready(function() {
+            $('#found_site').on('change', function() {
+               $(this).val() == "other" ? $('#specify').closest('.form-group').show() : $('#specify').closest('.form-group').hide();
+            })
+          })
+        </script>
+        <p>Do you have an event you would like us to show? Want to know more about us and what we do? Do you have an event review you want to publish? Please fill out the form below to get in contact with us, and we will try to get back to you promptly.</p>
+        <div class="container">
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-2">
+                <form role="form" method="POST" action="#">
+
+                    <legend class="text-center">Contact Form</legend>
+
+                    <fieldset>
+                        <legend>Required Details</legend>
+
+                        <div class="form-group col-md-6">
+                            <label for="first_name">First name</label>
+                            <input type="text" class="form-control" name="" id="first_name" placeholder="First Name">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="last_name">Last name</label>
+                            <input type="text" class="form-control" name="last_name" id="" placeholder="Last Name">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" name="" id="" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-12 hidden">
+                            <label for="specify">Message</label>
+                            <textarea class="form-control" id="specify" name="" placeholder="Type your message here..."></textarea>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Optional Details</legend>
+                        <div class="form-group col-md-6">
+                            <label for="country">Area of Residence</label>
+                            <select class="form-control" name="" id="country">
+                                <option>Central Auckland</option>
+                                <option>Manukau</option>
+                                <option>North Shore</option>
+                                <option>Papakura</option>
+                                <option>Waitakere</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="found_site">How did you find out about the site?</label>
+                            <select class="form-control" name="" id="found_site">
+                                <option>Company</option>
+                                <option>Friend</option>
+                                <option>Colleague</option>
+                                <option>Advertisement</option>
+                                <option>Google Search</option>
+                                <option>Online Article</option>
+                                <option value="other" >Other</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" id="">
+                                    I accept the <a href="#">terms and conditions</a>.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            </center>
+        </div>
+    </div>
+      </span>
+    </center>
+  </div>
+  <br>
+  <center>
+    <div id="footer">
+      <p>Created by M.N and K.E, 2017</p>
+    </div>
+  </center>
+  <br>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+/*! slides | https://gist.github.com/mhulse/66bcbb7099bb4beae530 */
+  (function($) {
+
+  'use strict';
+
+  var $slides = $('[data-slides]');
+  var images = ["https://www.botani.com.au/wp-content/uploads/2015/03/Dollarphotoclub_71673954.jpg",
+  "https://media.timeout.com/images/102729418/image.jpg",
+  "https://static1.squarespace.com/static/573641289f7266633021a231/t/57372590b09f95c3fbdce630/1463231890807/marthas-vineyard-group-yoga.jpg?format=2500w",
+  "http://ruidomag.com/wp-content/uploads/2017/01/Musicfestival-compressor.jpg",
+  "https://cdn.pixabay.com/photo/2014/09/07/17/43/girls-438152_960_720.jpg"
+  ];
+  var count = images.length;
+  console.log(images);
+  var slideshow = function() {
+    $slides
+      .css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
+      .show(0, function() {
+        setTimeout(slideshow, 10000);
+      });
+  };
+
+  slideshow();
+
+  }(jQuery));
+</script>
