@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Social Youth - Home</title>
+  <link rel='stylesheet' type='text/css' href='theme.css'/>
+</head>
+<body>
+  <span
+  	class="test"
+  	data-slides=""
+  > … </span>
+  <div id="header">
+    <span class="logo"><img src="images\Capture.PNG"/></span>
+    <span class="button">
+      <a href="index.html" id="link">Home</a>
+    </span>
+    <span class="button" id="active">
+      <a href="event-search.html" id="link">Events</a>
+    </span>
+    <span class="button">
+      <a href="blog.html" id="link">Blog</a>
+    </span>
+    <span class="button">
+      <a href="https://www.youtube.com" id="link">About</a>
+    </span>
+    <span class="button">
+      <a href="https://www.youtube.com" id="link">Contact</a>
+    </span>
+  </div>
+  <div id="container">
+    <center>
+      <span id="invisible">
+        <h1>Events for young people</h1>
+        <h4>All in one place.</h4>
+        <div id="enter"><a href="" id="link">Enter</a></div>
+      </span>
+    </center>
+    <center>
+      <span id="content-box" class="first">
+        <p>Sample Content</p>
+      </span>
+    </center>
+    <br>
+    <center>
+      <span id="content-box">
+        <p>Sample Content</p>
+      </span>
+    </center>
+  </div>
+  <br>
+  <center>
+    <div id="footer">
+      <p>Created by M.N and K.E, 2017</p>
+    </div>
+  </center>
+  <br>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+/*! slides | https://gist.github.com/mhulse/66bcbb7099bb4beae530 */
+  (function($) {
+
+  'use strict';
+
+  var $slides = $('[data-slides]');
+  var images = ["https://www.botani.com.au/wp-content/uploads/2015/03/Dollarphotoclub_71673954.jpg",
+  "https://media.timeout.com/images/102729418/image.jpg",
+  "https://static1.squarespace.com/static/573641289f7266633021a231/t/57372590b09f95c3fbdce630/1463231890807/marthas-vineyard-group-yoga.jpg?format=2500w",
+  "http://ruidomag.com/wp-content/uploads/2017/01/Musicfestival-compressor.jpg",
+  "https://cdn.pixabay.com/photo/2014/09/07/17/43/girls-438152_960_720.jpg"
+  ];
+  var count = images.length;
+  console.log(images);
+  var slideshow = function() {
+    $slides
+      .css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
+      .show(0, function() {
+        setTimeout(slideshow, 20000);
+      });
+  };
+
+  slideshow();
+
+  }(jQuery));
+</script>
