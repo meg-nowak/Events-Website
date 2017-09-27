@@ -152,3 +152,7 @@ h4{
 #enter:hover{
   background-color: #FF4E00;
 }
+#search{
+  width: 70%;
+  height: 40px;
+}
