@@ -63,15 +63,19 @@
   'use strict';
 
   var $slides = $('[data-slides]');
-  var images = ["https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg",
-    "https://i.pinimg.com/736x/58/38/e3/5838e35952fa8d7f3ac98d4178b05667--cute-senior-pictures-back-to-school-pictures.jpg"];
+  var images = ["https://www.botani.com.au/wp-content/uploads/2015/03/Dollarphotoclub_71673954.jpg",
+  "https://media.timeout.com/images/102729418/image.jpg",
+  "https://static1.squarespace.com/static/573641289f7266633021a231/t/57372590b09f95c3fbdce630/1463231890807/marthas-vineyard-group-yoga.jpg?format=2500w",
+  "http://ruidomag.com/wp-content/uploads/2017/01/Musicfestival-compressor.jpg",
+  "https://cdn.pixabay.com/photo/2014/09/07/17/43/girls-438152_960_720.jpg"
+  ];
   var count = images.length;
   console.log(images);
   var slideshow = function() {
     $slides
       .css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
       .show(0, function() {
-        setTimeout(slideshow, 10000);
+        setTimeout(slideshow, 20000);
       });
   };
 

@@ -124,7 +124,7 @@ h4{
 	background-position: center top;
 	background-size: cover;
   width: 100%;
-	transition: background-image 4s ease;
+	transition: background-image 5s ease-in-out;
   float: left;
   background-attachment: fixed;
   position: fixed;
