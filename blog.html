@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <head>
-  <title>Meg's Website</title>
-  <link rel='stylesheet' type='text/css' href='\\nasldv\homedrives$\NowakM3\Website\css\theme.css'/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Social Youth - Home</title>
+  <link rel='stylesheet' type='text/css' href='theme.css'/>
 </head>
 <body>
+  <span
+  	class="test"
+  	data-slides=""
+  > … </span>
   <div id="header">
-    <p>Welcome to my website!</p>
-    <a href="https://www.youtube.com" id="link">My favourite website!</a>
+    <span class="logo"><img src="images\Capture.PNG"/></span>
+    <span class="button">
+      <a href="index.html" id="link">Home</a>
+    </span>
+    <span class="button">
+      <a href="https://www.youtube.com" id="link">Events</a>
+    </span>
+    <span class="button">
+      <a href="https://www.youtube.com" id="link" class="active">Blog</a>
+    </span>
+    <span class="button">
+      <a href="https://www.youtube.com" id="link">About</a>
+    </span>
+    <span class="button">
+      <a href="https://www.youtube.com" id="link">Contact</a>
+    </span>
   </div>
   <div id="container">
     <center>
       <span id="invisible">
-        <h1>Events for young people.</h1>
-        <h4>All in one place</h4>
+        <h1>Event Reviews</h1>
       </span>
     </center>
     <center>
-      <span id="content-box">
-        <p>Sample Content</p>
-      </span>
-    </center>
-    <br>
-    <center>
-      <span id="content-box">
+      <span id="content-box" class="first">
         <p>Sample Content</p>
       </span>
     </center>
@@ -34,10 +46,34 @@
     </center>
   </div>
   <br>
-  <div id="footer">
-    <p>This is my footer</p>
-  </div>
+  <center>
+    <div id="footer">
+      <p>Created by M.N and K.E, 2017</p>
+    </div>
+  </center>
   <br>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+/*! slides | https://gist.github.com/mhulse/66bcbb7099bb4beae530 */
+  (function($) {
+
+  'use strict';
+
+  var $slides = $('[data-slides]');
+  var images = ["https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg",
+    "https://i.pinimg.com/736x/58/38/e3/5838e35952fa8d7f3ac98d4178b05667--cute-senior-pictures-back-to-school-pictures.jpg"];
+  var count = images.length;
+  console.log(images);
+  var slideshow = function() {
+    $slides
+      .css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
+      .show(0, function() {
+        setTimeout(slideshow, 10000);
+      });
+  };
+
+  slideshow();
+
+  }(jQuery));
 </script>
