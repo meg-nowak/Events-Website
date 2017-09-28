@@ -161,3 +161,12 @@ form * {
 form > fieldset > legend {
     font-size:120%;
 }
+.cont{
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+}
+.col-md-8-col-md-offset-2{
+  margin: 0, auto;
+  width: 100%;
+}
